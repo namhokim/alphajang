@@ -2,82 +2,72 @@
 
 import Cocoa
 
-let gun: UInt8 = 0b0001
-let cha: UInt8 = 0b010
-let po: UInt8 = 0b0011
-let ma: UInt8 = 0b0100
-let sang: UInt8 = 0b0101
-let sa: UInt8 = 0b0110
-let byongJol: UInt8 = 0b0111
-
-let cho: UInt8 = 0b0000
-let han: UInt8 = 0b1000
-
-let cho_gun = cho | gun
-let cho_cha = cho | cha
-let cho_po = cho | po
-let cho_ma = cho | ma
-let cho_sang = cho | sang
-let cho_sa = cho | sa
-let cho_jol = cho | byongJol
-
-let han_gun = han | gun
-let han_cha = han | cha
-let han_po = han | po
-let han_ma = han | ma
-let han_sang = han | sang
-let han_sa = han | sa
-let han_byong = han | byongJol
-
-func gimul(item: UInt8) -> String {
-    switch (item) {
-    case cho_gun:
-        return "楚"
-    case cho_cha:
-        return "車"
-    case cho_po:
-        return "包"
-    case cho_ma:
-        return "馬"
-    case cho_sang:
-        return "象"
-    case cho_sa:
-        return "士"
-    case cho_jol:
-        return "卒"
-    case han_gun:
-        return "漢"
-    case han_cha:
-        return "車"
-    case han_po:
-        return "包"
-    case han_ma:
-        return "馬"
-    case han_sang:
-        return "象"
-    case han_sa:
-        return "士"
-    case han_byong:
-        return "兵"
-    default:
-        return "口"
-    }
+struct Element {
+    static let empty: UInt8 = 0
+    static let gun: UInt8 = 0b0001
+    static let cha: UInt8 = 0b010
+    static let po: UInt8 = 0b0011
+    static let ma: UInt8 = 0b0100
+    static let sang: UInt8 = 0b0101
+    static let sa: UInt8 = 0b0110
+    static let byongJol: UInt8 = 0b0111
+    
+    static let cho: UInt8 = 0b0000
+    static let han: UInt8 = 0b1000
 }
+
+struct Gimul {
+    static let cho_gun = Element.cho | Element.gun
+    static let cho_cha = Element.cho | Element.cha
+    static let cho_po = Element.cho | Element.po
+    static let cho_ma = Element.cho | Element.ma
+    static let cho_sang = Element.cho | Element.sang
+    static let cho_sa = Element.cho | Element.sa
+    static let cho_jol = Element.cho | Element.byongJol
+    
+    static let han_gun = Element.han | Element.gun
+    static let han_cha = Element.han | Element.cha
+    static let han_po = Element.han | Element.po
+    static let han_ma = Element.han | Element.ma
+    static let han_sang = Element.han | Element.sang
+    static let han_sa = Element.han | Element.sa
+    static let han_byong = Element.han | Element.byongJol
+    
+    static let description = [
+        Gimul.cho_gun: "楚",
+        Gimul.cho_cha: "車",
+        Gimul.cho_po: "包",
+        Gimul.cho_ma: "馬",
+        Gimul.cho_sang: "象",
+        Gimul.cho_sa: "士",
+        Gimul.cho_jol: "卒",
+        Gimul.han_gun: "漢",
+        Gimul.han_cha: "車",
+        Gimul.han_po: "包",
+        Gimul.han_ma: "馬",
+        Gimul.han_sang: "象",
+        Gimul.han_sa: "士",
+        Gimul.han_byong: "兵"
+    ]
+}
+
 
 class Board : CustomStringConvertible {
     var storage = [UInt8]()
     init() {
         for var x = 0; x < 90; x++ {
-            storage.append(0)
+            storage.append(Element.empty)
         }
+    }
+    init(initialBoard: [UInt8]) {
+        //storage = initialBoard.map { $0.copy() }
+        storage = initialBoard
     }
     subscript(row: Int, column: Int) -> UInt8 {
         get {
-            // This could validate arguments.
             return storage[row * 9 + column]
         }
         set {
-            // This could also validate.
             storage[row * 9 + column] = newValue
         }
     }
@@ -91,47 +81,34 @@ class Board : CustomStringConvertible {
         }
         return str
     }
+    
+    func gimul(item: UInt8) -> String {
+        return Gimul.description[item] ?? "口"
+    }
 }
 
-var initBoard = Board()
-initBoard[0, 0] = han_cha
-initBoard[0, 1] = han_sang
-initBoard[0, 2] = han_ma
-initBoard[0, 3] = han_sa
-initBoard[0, 5] = han_sa
-initBoard[0, 6] = han_sang
-initBoard[0, 7] = han_ma
-initBoard[0, 8] = han_cha
+var BasicBoard = [
+    Gimul.han_cha,Element.empty, Element.empty, Gimul.han_sa, Element.empty, Gimul.han_sa, Element.empty, Element.empty, Gimul.han_cha,
+    Element.empty, Element.empty, Element.empty, Element.empty, Gimul.han_gun, Element.empty, Element.empty, Element.empty, Element.empty,
+    Element.empty, Gimul.han_po, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Gimul.han_po, Element.empty,
+    Gimul.han_byong, Element.empty, Gimul.han_byong, Element.empty, Gimul.han_byong, Element.empty, Gimul.han_byong, Element.empty, Gimul.han_byong,
+    Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty,
+    Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty,
+    Gimul.cho_jol, Element.empty, Gimul.cho_jol, Element.empty, Gimul.cho_jol, Element.empty, Gimul.cho_jol, Element.empty, Gimul.cho_jol,
+    Element.empty, Gimul.cho_po, Element.empty, Element.empty, Element.empty, Element.empty, Element.empty, Gimul.cho_po, Element.empty,
+    Element.empty, Element.empty, Element.empty, Element.empty, Gimul.han_gun, Element.empty, Element.empty, Element.empty, Element.empty,
+    Gimul.cho_cha, Element.empty, Element.empty, Gimul.cho_sa, Element.empty, Gimul.cho_sa, Element.empty, Element.empty, Gimul.cho_sa]
 
-initBoard[1, 4] = han_gun
+var initBoard = Board(initialBoard: BasicBoard)
+initBoard[0, 1] = Gimul.han_sang
+initBoard[0, 2] = Gimul.han_ma
+initBoard[0, 6] = Gimul.han_sang
+initBoard[0, 7] = Gimul.han_ma
 
-initBoard[2, 1] = han_po
-initBoard[2, 7] = han_po
+initBoard[9, 1] = Gimul.cho_ma
+initBoard[9, 2] = Gimul.cho_sang
+initBoard[9, 6] = Gimul.cho_ma
+initBoard[9, 7] = Gimul.cho_sang
 
-initBoard[3, 0] = han_byong
-initBoard[3, 2] = han_byong
-initBoard[3, 4] = han_byong
-initBoard[3, 6] = han_byong
-initBoard[3, 8] = han_byong
-
-initBoard[6, 0] = cho_jol
-initBoard[6, 2] = cho_jol
-initBoard[6, 4] = cho_jol
-initBoard[6, 6] = cho_jol
-initBoard[6, 8] = cho_jol
-
-initBoard[7, 1] = cho_po
-initBoard[7, 7] = cho_po
-
-initBoard[8, 4] = han_gun
-
-initBoard[9, 0] = cho_cha
-initBoard[9, 1] = cho_ma
-initBoard[9, 2] = cho_sang
-initBoard[9, 3] = cho_sa
-initBoard[9, 5] = cho_sa
-initBoard[9, 6] = cho_ma
-initBoard[9, 7] = cho_sang
-initBoard[9, 8] = cho_cha
 
 print(initBoard)
