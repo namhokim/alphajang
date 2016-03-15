@@ -8,7 +8,7 @@ let po: UInt8 = 0b0011
 let ma: UInt8 = 0b0100
 let sang: UInt8 = 0b0101
 let sa: UInt8 = 0b0110
-let jol: UInt8 = 0b0111
+let byongJol: UInt8 = 0b0111
 
 let cho: UInt8 = 0b0000
 let han: UInt8 = 0b1000
@@ -19,7 +19,7 @@ let cho_po = cho | po
 let cho_ma = cho | ma
 let cho_sang = cho | sang
 let cho_sa = cho | sa
-let cho_jol = cho | jol
+let cho_jol = cho | byongJol
 
 let han_gun = han | gun
 let han_cha = han | cha
@@ -27,7 +27,7 @@ let han_po = han | po
 let han_ma = han | ma
 let han_sang = han | sang
 let han_sa = han | sa
-let han_jol = han | jol
+let han_byong = han | byongJol
 
 func gimul(item: UInt8) -> String {
     switch (item) {
@@ -44,7 +44,7 @@ func gimul(item: UInt8) -> String {
     case cho_sa:
         return "士"
     case cho_jol:
-        return "兵"
+        return "卒"
     case han_gun:
         return "漢"
     case han_cha:
@@ -57,8 +57,8 @@ func gimul(item: UInt8) -> String {
         return "象"
     case han_sa:
         return "士"
-    case han_jol:
-        return "卒"
+    case han_byong:
+        return "兵"
     default:
         return "口"
     }
@@ -108,11 +108,11 @@ initBoard[1, 4] = han_gun
 initBoard[2, 1] = han_po
 initBoard[2, 7] = han_po
 
-initBoard[3, 0] = han_jol
-initBoard[3, 2] = han_jol
-initBoard[3, 4] = han_jol
-initBoard[3, 6] = han_jol
-initBoard[3, 8] = han_jol
+initBoard[3, 0] = han_byong
+initBoard[3, 2] = han_byong
+initBoard[3, 4] = han_byong
+initBoard[3, 6] = han_byong
+initBoard[3, 8] = han_byong
 
 initBoard[6, 0] = cho_jol
 initBoard[6, 2] = cho_jol
