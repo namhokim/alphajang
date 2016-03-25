@@ -55,7 +55,7 @@ struct Gimul {
 class Board : CustomStringConvertible {
     var storage = [UInt8]()
     init() {
-        for var x = 0; x < 90; x++ {
+        for _ in 0 ..< 90 {
             storage.append(Element.empty)
         }
     }
@@ -73,7 +73,7 @@ class Board : CustomStringConvertible {
     }
     var description: String{
         var str = ""
-        for var x = 0; x < 90; x++ {
+        for x in 0 ..< 90 {
             if (x != 0 && x % 9 == 0) {
                 str = str + "\n"
             }
