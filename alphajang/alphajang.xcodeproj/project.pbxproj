@@ -7,65 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A93D0BA1C92F69200952244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A93D0B91C92F69200952244 /* AppDelegate.m */; };
-		3A93D0BD1C92F69200952244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A93D0BC1C92F69200952244 /* main.m */; };
-		3A93D0C01C92F69200952244 /* alphajang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A93D0BE1C92F69200952244 /* alphajang.xcdatamodeld */; };
-		3A93D0C21C92F69200952244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A93D0C11C92F69200952244 /* Assets.xcassets */; };
-		3A93D0C51C92F69200952244 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A93D0C31C92F69200952244 /* MainMenu.xib */; };
-		3A93D0D01C92F69200952244 /* alphajangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A93D0CF1C92F69200952244 /* alphajangTests.m */; };
-		3A93D0DB1C92F69200952244 /* alphajangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A93D0DA1C92F69200952244 /* alphajangUITests.m */; };
+		3ACA14731CCB7F1C00A916A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA14721CCB7F1C00A916A8 /* AppDelegate.swift */; };
+		3ACA14751CCB7F1C00A916A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA14741CCB7F1C00A916A8 /* Assets.xcassets */; };
+		3ACA14781CCB7F1C00A916A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA14761CCB7F1C00A916A8 /* MainMenu.xib */; };
+		3ACA14831CCB7F1C00A916A8 /* alphajangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA14821CCB7F1C00A916A8 /* alphajangTests.swift */; };
+		3ACA148E1CCB7F1C00A916A8 /* alphajangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA148D1CCB7F1C00A916A8 /* alphajangUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A93D0CC1C92F69200952244 /* PBXContainerItemProxy */ = {
+		3ACA147F1CCB7F1C00A916A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A93D0AD1C92F69200952244 /* Project object */;
+			containerPortal = 3ACA14671CCB7F1C00A916A8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A93D0B41C92F69200952244;
+			remoteGlobalIDString = 3ACA146E1CCB7F1C00A916A8;
 			remoteInfo = alphajang;
 		};
-		3A93D0D71C92F69200952244 /* PBXContainerItemProxy */ = {
+		3ACA148A1CCB7F1C00A916A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A93D0AD1C92F69200952244 /* Project object */;
+			containerPortal = 3ACA14671CCB7F1C00A916A8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A93D0B41C92F69200952244;
+			remoteGlobalIDString = 3ACA146E1CCB7F1C00A916A8;
 			remoteInfo = alphajang;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A93D0B51C92F69200952244 /* alphajang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alphajang.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A93D0B81C92F69200952244 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3A93D0B91C92F69200952244 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A93D0BC1C92F69200952244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3A93D0BF1C92F69200952244 /* alphajang.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = alphajang.xcdatamodel; sourceTree = "<group>"; };
-		3A93D0C11C92F69200952244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A93D0C41C92F69200952244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		3A93D0C61C92F69200952244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A93D0CB1C92F69200952244 /* alphajangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alphajangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A93D0CF1C92F69200952244 /* alphajangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = alphajangTests.m; sourceTree = "<group>"; };
-		3A93D0D11C92F69200952244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A93D0D61C92F69200952244 /* alphajangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alphajangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A93D0DA1C92F69200952244 /* alphajangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = alphajangUITests.m; sourceTree = "<group>"; };
-		3A93D0DC1C92F69200952244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACA146F1CCB7F1C00A916A8 /* alphajang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alphajang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACA14721CCB7F1C00A916A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ACA14741CCB7F1C00A916A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ACA14771CCB7F1C00A916A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3ACA14791CCB7F1C00A916A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACA147E1CCB7F1C00A916A8 /* alphajangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alphajangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACA14821CCB7F1C00A916A8 /* alphajangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphajangTests.swift; sourceTree = "<group>"; };
+		3ACA14841CCB7F1C00A916A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACA14891CCB7F1C00A916A8 /* alphajangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alphajangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACA148D1CCB7F1C00A916A8 /* alphajangUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphajangUITests.swift; sourceTree = "<group>"; };
+		3ACA148F1CCB7F1C00A916A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A93D0B21C92F69200952244 /* Frameworks */ = {
+		3ACA146C1CCB7F1C00A916A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A93D0C81C92F69200952244 /* Frameworks */ = {
+		3ACA147B1CCB7F1C00A916A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A93D0D31C92F69200952244 /* Frameworks */ = {
+		3ACA14861CCB7F1C00A916A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,62 +70,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A93D0AC1C92F69200952244 = {
+		3ACA14661CCB7F1C00A916A8 = {
 			isa = PBXGroup;
 			children = (
-				3A93D0B71C92F69200952244 /* alphajang */,
-				3A93D0CE1C92F69200952244 /* alphajangTests */,
-				3A93D0D91C92F69200952244 /* alphajangUITests */,
-				3A93D0B61C92F69200952244 /* Products */,
+				3ACA14711CCB7F1C00A916A8 /* alphajang */,
+				3ACA14811CCB7F1C00A916A8 /* alphajangTests */,
+				3ACA148C1CCB7F1C00A916A8 /* alphajangUITests */,
+				3ACA14701CCB7F1C00A916A8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3A93D0B61C92F69200952244 /* Products */ = {
+		3ACA14701CCB7F1C00A916A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A93D0B51C92F69200952244 /* alphajang.app */,
-				3A93D0CB1C92F69200952244 /* alphajangTests.xctest */,
-				3A93D0D61C92F69200952244 /* alphajangUITests.xctest */,
+				3ACA146F1CCB7F1C00A916A8 /* alphajang.app */,
+				3ACA147E1CCB7F1C00A916A8 /* alphajangTests.xctest */,
+				3ACA14891CCB7F1C00A916A8 /* alphajangUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A93D0B71C92F69200952244 /* alphajang */ = {
+		3ACA14711CCB7F1C00A916A8 /* alphajang */ = {
 			isa = PBXGroup;
 			children = (
-				3A93D0B81C92F69200952244 /* AppDelegate.h */,
-				3A93D0B91C92F69200952244 /* AppDelegate.m */,
-				3A93D0C11C92F69200952244 /* Assets.xcassets */,
-				3A93D0C31C92F69200952244 /* MainMenu.xib */,
-				3A93D0C61C92F69200952244 /* Info.plist */,
-				3A93D0BE1C92F69200952244 /* alphajang.xcdatamodeld */,
-				3A93D0BB1C92F69200952244 /* Supporting Files */,
+				3ACA14721CCB7F1C00A916A8 /* AppDelegate.swift */,
+				3ACA14741CCB7F1C00A916A8 /* Assets.xcassets */,
+				3ACA14761CCB7F1C00A916A8 /* MainMenu.xib */,
+				3ACA14791CCB7F1C00A916A8 /* Info.plist */,
 			);
 			path = alphajang;
 			sourceTree = "<group>";
 		};
-		3A93D0BB1C92F69200952244 /* Supporting Files */ = {
+		3ACA14811CCB7F1C00A916A8 /* alphajangTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A93D0BC1C92F69200952244 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3A93D0CE1C92F69200952244 /* alphajangTests */ = {
-			isa = PBXGroup;
-			children = (
-				3A93D0CF1C92F69200952244 /* alphajangTests.m */,
-				3A93D0D11C92F69200952244 /* Info.plist */,
+				3ACA14821CCB7F1C00A916A8 /* alphajangTests.swift */,
+				3ACA14841CCB7F1C00A916A8 /* Info.plist */,
 			);
 			path = alphajangTests;
 			sourceTree = "<group>";
 		};
-		3A93D0D91C92F69200952244 /* alphajangUITests */ = {
+		3ACA148C1CCB7F1C00A916A8 /* alphajangUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3A93D0DA1C92F69200952244 /* alphajangUITests.m */,
-				3A93D0DC1C92F69200952244 /* Info.plist */,
+				3ACA148D1CCB7F1C00A916A8 /* alphajangUITests.swift */,
+				3ACA148F1CCB7F1C00A916A8 /* Info.plist */,
 			);
 			path = alphajangUITests;
 			sourceTree = "<group>";
@@ -138,13 +122,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A93D0B41C92F69200952244 /* alphajang */ = {
+		3ACA146E1CCB7F1C00A916A8 /* alphajang */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A93D0DF1C92F69200952244 /* Build configuration list for PBXNativeTarget "alphajang" */;
+			buildConfigurationList = 3ACA14921CCB7F1C00A916A8 /* Build configuration list for PBXNativeTarget "alphajang" */;
 			buildPhases = (
-				3A93D0B11C92F69200952244 /* Sources */,
-				3A93D0B21C92F69200952244 /* Frameworks */,
-				3A93D0B31C92F69200952244 /* Resources */,
+				3ACA146B1CCB7F1C00A916A8 /* Sources */,
+				3ACA146C1CCB7F1C00A916A8 /* Frameworks */,
+				3ACA146D1CCB7F1C00A916A8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -152,68 +136,69 @@
 			);
 			name = alphajang;
 			productName = alphajang;
-			productReference = 3A93D0B51C92F69200952244 /* alphajang.app */;
+			productReference = 3ACA146F1CCB7F1C00A916A8 /* alphajang.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A93D0CA1C92F69200952244 /* alphajangTests */ = {
+		3ACA147D1CCB7F1C00A916A8 /* alphajangTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A93D0E21C92F69200952244 /* Build configuration list for PBXNativeTarget "alphajangTests" */;
+			buildConfigurationList = 3ACA14951CCB7F1C00A916A8 /* Build configuration list for PBXNativeTarget "alphajangTests" */;
 			buildPhases = (
-				3A93D0C71C92F69200952244 /* Sources */,
-				3A93D0C81C92F69200952244 /* Frameworks */,
-				3A93D0C91C92F69200952244 /* Resources */,
+				3ACA147A1CCB7F1C00A916A8 /* Sources */,
+				3ACA147B1CCB7F1C00A916A8 /* Frameworks */,
+				3ACA147C1CCB7F1C00A916A8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A93D0CD1C92F69200952244 /* PBXTargetDependency */,
+				3ACA14801CCB7F1C00A916A8 /* PBXTargetDependency */,
 			);
 			name = alphajangTests;
 			productName = alphajangTests;
-			productReference = 3A93D0CB1C92F69200952244 /* alphajangTests.xctest */;
+			productReference = 3ACA147E1CCB7F1C00A916A8 /* alphajangTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3A93D0D51C92F69200952244 /* alphajangUITests */ = {
+		3ACA14881CCB7F1C00A916A8 /* alphajangUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A93D0E51C92F69200952244 /* Build configuration list for PBXNativeTarget "alphajangUITests" */;
+			buildConfigurationList = 3ACA14981CCB7F1C00A916A8 /* Build configuration list for PBXNativeTarget "alphajangUITests" */;
 			buildPhases = (
-				3A93D0D21C92F69200952244 /* Sources */,
-				3A93D0D31C92F69200952244 /* Frameworks */,
-				3A93D0D41C92F69200952244 /* Resources */,
+				3ACA14851CCB7F1C00A916A8 /* Sources */,
+				3ACA14861CCB7F1C00A916A8 /* Frameworks */,
+				3ACA14871CCB7F1C00A916A8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A93D0D81C92F69200952244 /* PBXTargetDependency */,
+				3ACA148B1CCB7F1C00A916A8 /* PBXTargetDependency */,
 			);
 			name = alphajangUITests;
 			productName = alphajangUITests;
-			productReference = 3A93D0D61C92F69200952244 /* alphajangUITests.xctest */;
+			productReference = 3ACA14891CCB7F1C00A916A8 /* alphajangUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A93D0AD1C92F69200952244 /* Project object */ = {
+		3ACA14671CCB7F1C00A916A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = namo;
 				TargetAttributes = {
-					3A93D0B41C92F69200952244 = {
+					3ACA146E1CCB7F1C00A916A8 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					3A93D0CA1C92F69200952244 = {
+					3ACA147D1CCB7F1C00A916A8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 3A93D0B41C92F69200952244;
+						TestTargetID = 3ACA146E1CCB7F1C00A916A8;
 					};
-					3A93D0D51C92F69200952244 = {
+					3ACA14881CCB7F1C00A916A8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 3A93D0B41C92F69200952244;
+						TestTargetID = 3ACA146E1CCB7F1C00A916A8;
 					};
 				};
 			};
-			buildConfigurationList = 3A93D0B01C92F69200952244 /* Build configuration list for PBXProject "alphajang" */;
+			buildConfigurationList = 3ACA146A1CCB7F1C00A916A8 /* Build configuration list for PBXProject "alphajang" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,36 +206,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 3A93D0AC1C92F69200952244;
-			productRefGroup = 3A93D0B61C92F69200952244 /* Products */;
+			mainGroup = 3ACA14661CCB7F1C00A916A8;
+			productRefGroup = 3ACA14701CCB7F1C00A916A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A93D0B41C92F69200952244 /* alphajang */,
-				3A93D0CA1C92F69200952244 /* alphajangTests */,
-				3A93D0D51C92F69200952244 /* alphajangUITests */,
+				3ACA146E1CCB7F1C00A916A8 /* alphajang */,
+				3ACA147D1CCB7F1C00A916A8 /* alphajangTests */,
+				3ACA14881CCB7F1C00A916A8 /* alphajangUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A93D0B31C92F69200952244 /* Resources */ = {
+		3ACA146D1CCB7F1C00A916A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A93D0C21C92F69200952244 /* Assets.xcassets in Resources */,
-				3A93D0C51C92F69200952244 /* MainMenu.xib in Resources */,
+				3ACA14751CCB7F1C00A916A8 /* Assets.xcassets in Resources */,
+				3ACA14781CCB7F1C00A916A8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A93D0C91C92F69200952244 /* Resources */ = {
+		3ACA147C1CCB7F1C00A916A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A93D0D41C92F69200952244 /* Resources */ = {
+		3ACA14871CCB7F1C00A916A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,52 +245,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A93D0B11C92F69200952244 /* Sources */ = {
+		3ACA146B1CCB7F1C00A916A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A93D0BD1C92F69200952244 /* main.m in Sources */,
-				3A93D0C01C92F69200952244 /* alphajang.xcdatamodeld in Sources */,
-				3A93D0BA1C92F69200952244 /* AppDelegate.m in Sources */,
+				3ACA14731CCB7F1C00A916A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A93D0C71C92F69200952244 /* Sources */ = {
+		3ACA147A1CCB7F1C00A916A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A93D0D01C92F69200952244 /* alphajangTests.m in Sources */,
+				3ACA14831CCB7F1C00A916A8 /* alphajangTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A93D0D21C92F69200952244 /* Sources */ = {
+		3ACA14851CCB7F1C00A916A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A93D0DB1C92F69200952244 /* alphajangUITests.m in Sources */,
+				3ACA148E1CCB7F1C00A916A8 /* alphajangUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A93D0CD1C92F69200952244 /* PBXTargetDependency */ = {
+		3ACA14801CCB7F1C00A916A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A93D0B41C92F69200952244 /* alphajang */;
-			targetProxy = 3A93D0CC1C92F69200952244 /* PBXContainerItemProxy */;
+			target = 3ACA146E1CCB7F1C00A916A8 /* alphajang */;
+			targetProxy = 3ACA147F1CCB7F1C00A916A8 /* PBXContainerItemProxy */;
 		};
-		3A93D0D81C92F69200952244 /* PBXTargetDependency */ = {
+		3ACA148B1CCB7F1C00A916A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A93D0B41C92F69200952244 /* alphajang */;
-			targetProxy = 3A93D0D71C92F69200952244 /* PBXContainerItemProxy */;
+			target = 3ACA146E1CCB7F1C00A916A8 /* alphajang */;
+			targetProxy = 3ACA148A1CCB7F1C00A916A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A93D0C31C92F69200952244 /* MainMenu.xib */ = {
+		3ACA14761CCB7F1C00A916A8 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3A93D0C41C92F69200952244 /* Base */,
+				3ACA14771CCB7F1C00A916A8 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -313,7 +296,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3A93D0DD1C92F69200952244 /* Debug */ = {
+		3ACA14901CCB7F1C00A916A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -353,10 +336,11 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		3A93D0DE1C92F69200952244 /* Release */ = {
+		3ACA14911CCB7F1C00A916A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +376,7 @@
 			};
 			name = Release;
 		};
-		3A93D0E01C92F69200952244 /* Debug */ = {
+		3ACA14931CCB7F1C00A916A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -404,7 +388,7 @@
 			};
 			name = Debug;
 		};
-		3A93D0E11C92F69200952244 /* Release */ = {
+		3ACA14941CCB7F1C00A916A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -416,7 +400,7 @@
 			};
 			name = Release;
 		};
-		3A93D0E31C92F69200952244 /* Debug */ = {
+		3ACA14961CCB7F1C00A916A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -429,7 +413,7 @@
 			};
 			name = Debug;
 		};
-		3A93D0E41C92F69200952244 /* Release */ = {
+		3ACA14971CCB7F1C00A916A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -442,7 +426,7 @@
 			};
 			name = Release;
 		};
-		3A93D0E61C92F69200952244 /* Debug */ = {
+		3ACA14991CCB7F1C00A916A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -455,7 +439,7 @@
 			};
 			name = Debug;
 		};
-		3A93D0E71C92F69200952244 /* Release */ = {
+		3ACA149A1CCB7F1C00A916A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -471,53 +455,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A93D0B01C92F69200952244 /* Build configuration list for PBXProject "alphajang" */ = {
+		3ACA146A1CCB7F1C00A916A8 /* Build configuration list for PBXProject "alphajang" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A93D0DD1C92F69200952244 /* Debug */,
-				3A93D0DE1C92F69200952244 /* Release */,
+				3ACA14901CCB7F1C00A916A8 /* Debug */,
+				3ACA14911CCB7F1C00A916A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A93D0DF1C92F69200952244 /* Build configuration list for PBXNativeTarget "alphajang" */ = {
+		3ACA14921CCB7F1C00A916A8 /* Build configuration list for PBXNativeTarget "alphajang" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A93D0E01C92F69200952244 /* Debug */,
-				3A93D0E11C92F69200952244 /* Release */,
+				3ACA14931CCB7F1C00A916A8 /* Debug */,
+				3ACA14941CCB7F1C00A916A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		3A93D0E21C92F69200952244 /* Build configuration list for PBXNativeTarget "alphajangTests" */ = {
+		3ACA14951CCB7F1C00A916A8 /* Build configuration list for PBXNativeTarget "alphajangTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A93D0E31C92F69200952244 /* Debug */,
-				3A93D0E41C92F69200952244 /* Release */,
+				3ACA14961CCB7F1C00A916A8 /* Debug */,
+				3ACA14971CCB7F1C00A916A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		3A93D0E51C92F69200952244 /* Build configuration list for PBXNativeTarget "alphajangUITests" */ = {
+		3ACA14981CCB7F1C00A916A8 /* Build configuration list for PBXNativeTarget "alphajangUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A93D0E61C92F69200952244 /* Debug */,
-				3A93D0E71C92F69200952244 /* Release */,
+				3ACA14991CCB7F1C00A916A8 /* Debug */,
+				3ACA149A1CCB7F1C00A916A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3A93D0BE1C92F69200952244 /* alphajang.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3A93D0BF1C92F69200952244 /* alphajang.xcdatamodel */,
-			);
-			currentVersion = 3A93D0BF1C92F69200952244 /* alphajang.xcdatamodel */;
-			path = alphajang.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 3A93D0AD1C92F69200952244 /* Project object */;
+	rootObject = 3ACA14671CCB7F1C00A916A8 /* Project object */;
 }
